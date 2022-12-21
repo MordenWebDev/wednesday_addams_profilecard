@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: #ccc;
+    gap: 16px;
+  
+}
+.card{
+/* background-color: red; */
+width: 250px;
+position: relative;
+/* background: radial-gradient(#30244E,#0D0920); */
+height: 350px;
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+align-items: center;
+border-bottom-left-radius: 10000px;
+border-bottom-right-radius: 10000px;
+overflow: hidden;
+}
+.circle{
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(#30244E,#0D0920);
+    border-radius: 50%;
+    position: absolute;
+}
+.person{
+    position: absolute;
+   width: 65%;
+    transition: all 350ms;
+ 
+}
+.card:hover .person{
+    transform: scale(1.3);
+    
+}
